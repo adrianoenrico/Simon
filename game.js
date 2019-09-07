@@ -42,7 +42,12 @@ function game(){
     $(document).keydown(function() {
         nextSequence();
         $(document).off("keydown");
-    }); 
+    });
+    $(document).click(function(){
+        nextSequence();
+        $(document).off("click");
+    });
+    
 }
 //How does the game work?
 //  simple: first you press a key to start. 
