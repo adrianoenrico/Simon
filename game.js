@@ -40,14 +40,13 @@ function game(){
     gamePattern = [];
     level = 0;
     $(document).keydown(function() {
-        nextSequence();
         $(document).off("keydown");
+        nextSequence();
     });
     $(document).click(function(){
-        nextSequence();
         $(document).off("click");
-    });
-    
+        nextSequence();
+    });   
 }
 //How does the game work?
 //  simple: first you press a key to start. 
